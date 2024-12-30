@@ -1,0 +1,86 @@
+:root {
+  /* Colors */
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-size-paragraph: 14px;
+  /* Font Weights */
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+
+.grey {
+  background-color: var(--color-grey-700);
+}
+
+.grey-dark {
+  background-color: var(--color-grey-800);
+}
+
+.grey-darker {
+  background-color: var(--color-grey-900);
+}
+
+.weight-400 {
+  font-weight: var(--font-weight-400);
+}
+
+.weight-600 {
+  font-weight: var(--font-weight-600);
+}
+
+.weight-700 {
+  font-weight: var(--font-weight-700);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+/*-----------------------------
+        Card
+------------------------------*/
+.card2 {
+
+  max-width: 550px;
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+.info {
+  text-align: center;
+}
+.green {
+  color: var(--color-green);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+  margin: 5px 0;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px
+
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-green);
+  color: var(--color-grey-900) !important;
+}
